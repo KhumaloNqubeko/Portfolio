@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+img {
+  border-radius: 50%;
+}
 
 header {
   background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/b3.jpg');
@@ -65,7 +67,7 @@ header {
   position: absolute;
   // border: 1px solid red;
   top: 55%;
-  left: 50%;
+  left: 15%;
   transform: translate(-50%, -50%);
 }
 

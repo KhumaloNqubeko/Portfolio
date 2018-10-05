@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { DialogPopUpComponent } from 'src/app/dialog-pop-up/dialog-pop-up.component';
+import { NavigationService } from 'src/app/common/navigation.service';
 
 @Component({
   selector: 'app-resume',
@@ -9,21 +10,14 @@ import { DialogPopUpComponent } from 'src/app/dialog-pop-up/dialog-pop-up.compon
 })
 export class ResumeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(private navigationService: NavigationService) { }
 
   ngOnInit() {
 
   }
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(DialogPopUpComponent, {
-
-    }
-    );
-
-    dialogRef.afterClosed().subscribe(result => {
-
-    });
+  returnHome() {
+    this.navigationService.emitGoto();
   }
 
 }

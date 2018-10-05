@@ -1,0 +1,80 @@
+.contact-content{
+    text-align: center;
+    padding-top: 80px;
+}
+
+p{
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+    font-weight: 30px;
+    font-size: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    float: right;
+  }
+
+  .btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+  }
+  
+  .btn-full:hover{
+    background-color: #fff;
+  }
+
+  .social-icon {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+ul li{
+    display: inline-block;
+    padding-left: 2px;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }

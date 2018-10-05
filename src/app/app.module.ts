@@ -11,6 +11,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms';
 import { DialogPopUpComponent } from 'src/app/dialog-pop-up/dialog-pop-up.component';
 import { SimplePdfViewerModule } from 'simple-pdf-viewer';
+import { NavigationService } from 'src/app/common/navigation.service';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,16 +21,18 @@ import { SimplePdfViewerModule } from 'simple-pdf-viewer';
     HomeComponent,
     ContactComponent,
     ResumeComponent,
-    DialogPopUpComponent
+    DialogPopUpComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    AppRoutingModule,
     SimplePdfViewerModule
   ],
-  providers: [],
+  providers: [NavigationService],
   entryComponents: [DialogPopUpComponent],
   bootstrap: [AppComponent]
 })
