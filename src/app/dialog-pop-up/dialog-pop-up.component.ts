@@ -3,8 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 
 export interface DialogData {
-  animal: string;
-  name: string;
+  type: string;
 }
 
 @Component({

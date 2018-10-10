@@ -7,7 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
+  },
+  "engines": {
+    "node": "8.11.1",
+    "npm": "6.0.1"
   },
   "private": true,
   "dependencies": {
@@ -19,24 +24,28 @@
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
     "@angular/material": "^6.4.7",
+    "@angular-devkit/build-angular": "~0.7.0",
+    "@angular/cli": "~6.1.5",
+    "@angular/compiler-cli": "^6.1.0",
+    "@angular/language-service": "^6.1.0",
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@progress/kendo-angular-pdf-export": "^1.1.2",
+    "@progress/kendo-drawing": "^1.5.7",
     "bootstrap": "^3.3.7",
     "bourbon": "^5.1.0",
     "compass": "^0.1.1",
     "compass-mixins": "^0.12.10",
     "core-js": "^2.5.4",
     "pdfjs-dist": "^2.0.489",
-    "rxjs": "^6.0.0",
+    "rxjs": "^6.3.3",
     "simple-pdf-viewer": "^2.0.2",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "express": "^4.16.3",
+    "express-http-proxy": "^1.2.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.7.0",
-    "@angular/cli": "~6.1.5",
-    "@angular/compiler-cli": "^6.1.0",
-    "@angular/language-service": "^6.1.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

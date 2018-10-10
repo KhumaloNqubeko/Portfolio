@@ -1,3 +1,42 @@
-<p>
-  Works
-</p>
+<div class="cv-pdf" [hidden]="data.type !== 'cv'">
+  <embed src="assets/Sabelo_Shabalala_CV.pdf" type="application/pdf" width="100%" height="100%" />
+</div>
+<div class="container" [hidden]="data.type !== 'project'">
+  <div class="heading">
+    <h1>
+      <strong>My Projects</strong>
+    </h1>
+  </div>
+  <div class="inner-content1">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="assets/images/pnp.jpg" alt="absaLogo" width="40%" height="40%">
+      </div>
+      <div class="col-sm-1 vl-1"></div>
+      <div class="col-sm-5">
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Link :</strong> Currently not available <br>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="assets/images/absa.png" alt="absaLogo" width="40%" height="40%">
+      </div>
+      <div class="col-sm-1 vl-2"></div>
+      <div class="col-sm-5">
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Role :</strong> Angular Developer <br>
+        <strong>Link :</strong> Currently not available <br>
+      </div>
+    </div>
+  </div>
+</div>

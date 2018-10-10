@@ -1,34 +1,36 @@
 <div class="container animated slideInLeft">
+   <div class="inner-content">
     <div class="gallery">
-        <a target="_blank" href="fjords.jpg">
+        <a target="_blank" (click)="openDialog('project')">
             <img src="assets/images/project.jpg" alt="Cinque Terre" width="300" height="200">
         </a>
-        <div class="desc">Click on the image to view the projects I have worked on.</div>
+        <div class="desc">view projects</div>
     </div>
 
-    <div class="gallery">
+    <!-- <div class="gallery">
         <a target="_blank" href="forest.jpg">
-            <img src="assets/images/b1.jpg" alt="Forest" width="300" height="200">
+            <img src="assets/images/m.jpg" alt="Forest" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
+        <div class="desc">view ...</div>
+    </div> -->
 
     <div class="gallery">
-        <a target="_blank" href="lights.jpg">
+        <a target="_blank" (click)="openDialog('cv')">
             <img src="assets/images/cv.jpg" alt="Northern Lights" width="300" height="200">
         </a>
-        <div class="desc">Click on the image to view my curriculum vitae</div>
+        <div class="desc">view cv</div>
     </div>
 
-    <div class="gallery">
+    <!-- <div class="gallery">
         <a target="_blank" href="mountains.jpg">
             <img src="assets/images/b1.jpg" alt="Mountains" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-    <div style="padding-top: 30%;">
-        <button class="btn btn-full" (click)="returnHome()">
-            <i class="fa fa-arrow-left">Go back home</i>
-        </button>
-    </div>
+        <div class="desc">view ...</div>
+    </div> -->
+   </div>
+   <div style="padding-top: 30%;">
+    <button class="btn btn-full" (click)="returnHome()">
+        <i class="fa fa-arrow-left">Go back home</i>
+    </button>
+</div>
 </div>

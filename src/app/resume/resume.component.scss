@@ -3,6 +3,7 @@ div.gallery {
     border: 1px solid #ccc;
     float: left;
     width: 180px;
+    height: 180px;
 }
 
 div.gallery:hover {
@@ -18,11 +19,14 @@ div.desc {
     padding: 15px;
     text-align: center;
     color: white;
+    font-family: 'Flamenco', cursive;
+    font-weight: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .container{
     padding-top: 10%;
-    margin-left: 25%;
 }
 
 
@@ -46,4 +50,12 @@ div.desc {
   
   .btn-full:hover{
     background-color: #fff;
+  }
+
+  .inner-content{
+      margin-left: 35%;
+  }
+
+  a{
+    cursor: pointer;
   }

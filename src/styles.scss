@@ -6,3 +6,11 @@ body{
     overflow-x: hidden;
     color: white
 }
+
+.custom-dialog-container .mat-dialog-container {
+    /* add your styles */
+    padding: 0px !important;
+    width: 2500px;
+    height: 700px;
+    overflow: hidden;
+}
